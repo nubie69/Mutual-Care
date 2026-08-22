@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutual Care Wallet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+      <div class="ambient ambient-bottom"></div>
+
+      <div class="dashboard-layout" id="top">
+        <aside class="dashboard-sidebar">
+          <a class="dashboard-brand" href="./index.html">
+            <img
+              class="dashboard-brand-logo"
+              src="./img/mutualcare_Logo.png"
+              alt="Mutual Care Community logo"
+            />
+            <div>
+              <strong>Mutual Care</strong>
+              <span>Member space</span>
+            </div>
+          </a>
+
+          <nav class="dashboard-nav">
+            <a class="dashboard-nav-item" href="./dashboard.html">
+              <span class="dashboard-nav-icon icon-home">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span>Home</span>
+            </a>
+            <a class="dashboard-nav-item" href="./merchant.html">
+              <span class="dashboard-nav-icon icon-merchant"></span>
+              <span>Merchant</span>
+            </a>
+            <a class="dashboard-nav-item active" href="./wallet.html">
+              <span class="dashboard-nav-icon icon-wallet"></span>
+              <span>Wallet</span>
+            </a>
+            <a class="dashboard-nav-item" href="./activity.html">
+              <span class="dashboard-nav-icon icon-activity"></span>
+              <span>Activity</span>
+            </a>
+            <a class="dashboard-nav-item" href="./referrals.html">
+              <span class="dashboard-nav-icon icon-referrals"></span>
+              <span>Referrals</span>
+            </a>
+            <a class="dashboard-nav-item" href="./access.html">
+              <span class="dashboard-nav-icon icon-access"></span>
+              <span>Access</span>
+            </a>
+            <a class="dashboard-nav-item" href="./profile.html">
+              <span class="dashboard-nav-icon icon-profile"></span>
+              <span>Profile</span>
+            </a>
+            <a class="dashboard-nav-item" href="./settings.html">
+              <span class="dashboard-nav-icon icon-settings"></span>
+              <span>Settings</span>
+            </a>
+            <a class="dashboard-nav-item logout" href="./index.html">
+              <span class="dashboard-nav-icon icon-logout"></span>
+              <span>Logout</span>
+            </a>
+          </nav>
+        </aside>
+
+        <main class="dashboard-main">
+          <section class="dashboard-section dashboard-page">
+            <div class="wallet-page">
+              <div class="wallet-overview-card">
+                <div class="wallet-overview-top">
+                  <div class="wallet-title-block">
+                    <div class="wallet-title-icon"></div>
+                    <div>
+                      <span class="dashboard-kicker">Marketplace wallet</span>
+                      <h1 class="dashboard-title">Wallet and payout</h1>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wallet-balance-grid">
+                  <article class="wallet-balance-card">
+                    <div class="wallet-card-head">
+                      <div class="wallet-card-icon"></div>
+                      <span class="wallet-card-badge">Withdrawable</span>
+                    </div>
+                    <h2>Market Wallet</h2>
+                    <strong class="wallet-balance-amount">P 150.00</strong>
+                    <p>Your available commercial wallet balance for eligible payout requests.</p>
+                    <a href="#wallet-payout" class="button button-primary wallet-balance-button">
+                      Request Payout
+                    </a>
+                  </article>
+
+                  <article class="wallet-balance-card wallet-points-card">
+                    <div class="wallet-card-head">
+                      <div class="wallet-card-icon wallet-points-icon"></div>
+                      <span class="wallet-card-badge wallet-card-badge-gold">Points</span>
+                    </div>
+                    <h2>Market Points</h2>
+                    <strong class="wallet-balance-amount">0</strong>
+                    <p>Non-cash points available for supported marketplace uses.</p>
+                  </article>
+                </div>
+
+                <div class="wallet-status-banner">
+                  <div class="wallet-status-copy">
+                    <div class="wallet-status-icon"></div>
+                    <div>
+                      <strong>Payout requests are open today</strong>
+                      <p>You may submit a payout request during the current availability window.</p>
+                    </div>
+                  </div>
+                  <span class="wallet-open-pill">Open Today</span>
+                </div>
+
+                <div class="wallet-note-banner">
+                  <div class="wallet-note-icon">i</div>
+                  <p>
+                    Wallet balances shown here are commercial account records within
+                    <strong>Mutual Care Market</strong> and are separate from community funds.
+                  </p>
+                </div>
+
+                <div class="wallet-action-row">
+                  <a href="./wallet.html" class="button button-secondary">Refresh Wallet</a>
+                  <a href="#wallet-payout" class="button button-primary">Request Payout</a>
+                  <a href="#wallet-channels" class="button button-secondary">Add Payout Channel</a>
+                </div>
+              </div>
+
+              <div class="wallet-tabs">
+                <button class="wallet-tab active" type="button">Payout</button>
+                <button class="wallet-tab" type="button">Channels</button>
+                <button class="wallet-tab" type="button">History</button>
+              </div>
+
+              <div class="wallet-form-card" id="wallet-payout">
+                <div class="wallet-form-header">
+                  <div>
+                    <span class="dashboard-kicker">Market payout</span>
+                    <h2>Request a withdrawal</h2>
+                    <p>Select an eligible balance, payout destination, and the amount you want to request.</p>
+                  </div>
+                  <span class="wallet-open-pill">Open Today</span>
+                </div>
+
+                <div class="wallet-form-banner">
+                  Mutual Care Market accepts payout requests during the current payout window.
+                </div>
+
+                <div class="wallet-source-section">
+                  <div class="wallet-source-heading">
+                    <div class="wallet-card-icon"></div>
+                    <div>
+                      <strong>Select payout source</strong>
+                      <p>Choose which eligible balance you want to withdraw from.</p>
+                    </div>
+                  </div>
+
+                  <div class="wallet-source-grid">
+                    <article class="wallet-source-card active">
+                      <div class="wallet-source-card-icon"></div>
+                      <div>
+                        <strong>Market Wallet</strong>
+                        <span>Available balance</span>
+                        <b>P 150.00</b>
+                      </div>
+                      <span class="wallet-source-check"></span>
+                    </article>
+
+                    <article class="wallet-source-card">
+                      <div class="wallet-source-card-icon wallet-referral-icon"></div>
+                      <div>
+                        <strong>Referral Rewards</strong>
+                        <span>Available balance</span>
+                        <b>P 0.00</b>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="wallet-form-grid">
+                  <label class="wallet-field" id="wallet-channels">
+                    <span>Payout Channel</span>
+                    <select>
+                      <option>Select payout channel</option>
+                    </select>
+                    <a href="#wallet-channels" class="wallet-field-link">Manage payout channels</a>
+                  </label>
+
+                  <label class="wallet-field">
+                    <span>Amount</span>
+                    <input type="text" value="P 0" />
+                    <div class="wallet-field-meta">
+                      <small>Available: P 150.00</small>
+                      <a href="#wallet-payout">Use Maximum</a>
+                    </div>
+                  </label>
+                </div>
+
+                <label class="wallet-field wallet-field-full">
+                  <span>Payout Note <em>Optional</em></span>
+                  <textarea placeholder="Add an optional note for payout review"></textarea>
+                </label>
+
+                <div class="wallet-note-banner wallet-note-banner-soft">
+                  <div class="wallet-note-icon">i</div>
+                  <p>
+                    Payout requests remain subject to balance verification, applicable transaction
+                    rules, and the selected payout method.
+                  </p>
+                </div>
+
+                <div class="wallet-submit-row">
+                  <a href="#wallet-payout" class="button button-primary">Submit Payout Request</a>
+                  <a href="#wallet-payout" class="button button-secondary">View Payout History</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

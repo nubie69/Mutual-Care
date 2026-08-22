@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutual Care Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+      <div class="ambient ambient-bottom"></div>
+
+      <div class="dashboard-layout" id="top">
+        <aside class="dashboard-sidebar">
+          <a class="dashboard-brand" href="./index.html">
+            <img
+              class="dashboard-brand-logo"
+              src="./img/mutualcare_Logo.png"
+              alt="Mutual Care Community logo"
+            />
+            <div>
+              <strong>Mutual Care</strong>
+              <span>Member space</span>
+            </div>
+          </a>
+
+          <nav class="dashboard-nav">
+            <a class="dashboard-nav-item" href="./dashboard.html">
+              <span class="dashboard-nav-icon icon-home">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span>Home</span>
+            </a>
+            <a class="dashboard-nav-item" href="./merchant.html">
+              <span class="dashboard-nav-icon icon-merchant"></span>
+              <span>Merchant</span>
+            </a>
+            <a class="dashboard-nav-item" href="./wallet.html">
+              <span class="dashboard-nav-icon icon-wallet"></span>
+              <span>Wallet</span>
+            </a>
+            <a class="dashboard-nav-item" href="./activity.html">
+              <span class="dashboard-nav-icon icon-activity"></span>
+              <span>Activity</span>
+            </a>
+            <a class="dashboard-nav-item" href="./referrals.html">
+              <span class="dashboard-nav-icon icon-referrals"></span>
+              <span>Referrals</span>
+            </a>
+            <a class="dashboard-nav-item" href="./access.html">
+              <span class="dashboard-nav-icon icon-access"></span>
+              <span>Access</span>
+            </a>
+            <a class="dashboard-nav-item" href="./profile.html">
+              <span class="dashboard-nav-icon icon-profile"></span>
+              <span>Profile</span>
+            </a>
+            <a class="dashboard-nav-item active" href="./settings.html">
+              <span class="dashboard-nav-icon icon-settings"></span>
+              <span>Settings</span>
+            </a>
+            <a class="dashboard-nav-item logout" href="./index.html">
+              <span class="dashboard-nav-icon icon-logout"></span>
+              <span>Logout</span>
+            </a>
+          </nav>
+        </aside>
+
+        <main class="dashboard-main">
+          <section class="dashboard-section dashboard-page">
+            <div class="settings-page">
+              <div class="settings-hero">
+                <div>
+                  <span class="settings-eyebrow">Member account center</span>
+                  <h1>Account Settings</h1>
+                  <p>
+                    Keep your account secure and manage your membership activation
+                    tools.
+                  </p>
+                </div>
+
+                <div class="settings-hero-actions">
+                  <a href="#security" class="button button-secondary">
+                    Password Protection
+                  </a>
+                  <a href="#activation" class="button button-secondary">
+                    Activation Access
+                  </a>
+                </div>
+              </div>
+
+              <div class="settings-summary-grid">
+                <article class="settings-summary-card active">
+                  <div class="wallet-status-icon"></div>
+                  <div>
+                    <strong>Security Access</strong>
+                    <p>
+                      Update your password to keep your member account protected.
+                    </p>
+                  </div>
+                  <span class="wallet-source-check"></span>
+                </article>
+
+                <article class="settings-summary-card" id="activation">
+                  <div class="wallet-card-icon wallet-points-icon"></div>
+                  <div>
+                    <strong>Membership Activation</strong>
+                    <p>Use your key code to activate or upgrade your account.</p>
+                  </div>
+                  <span class="settings-arrow">&rsaquo;</span>
+                </article>
+              </div>
+
+              <div class="settings-form-card" id="security">
+                <span class="dashboard-kicker">Security access</span>
+                <h2>Manage your password</h2>
+
+                <div class="settings-security-box">
+                  <div class="settings-security-head">
+                    <div class="wallet-status-icon"></div>
+                    <div>
+                      <span class="dashboard-kicker">Security access</span>
+                      <h3>Update your account password</h3>
+                    </div>
+                  </div>
+
+                  <p>
+                    Change your password to help keep your Mutual Care account
+                    secure and protected.
+                  </p>
+
+                  <div class="settings-reminder">
+                    <div class="wallet-note-icon">i</div>
+                    <div>
+                      <strong>Security reminder</strong>
+                      <p>
+                        Use a strong password that is difficult to guess and avoid
+                        sharing it with others.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="settings-field-grid">
+                    <label class="wallet-field">
+                      <span>Current Password</span>
+                      <input
+                        type="password"
+                        placeholder="Enter your current password"
+                      />
+                    </label>
+
+                    <label class="wallet-field">
+                      <span>New Password</span>
+                      <input
+                        type="password"
+                        placeholder="Enter your new password"
+                      />
+                    </label>
+
+                    <label class="wallet-field">
+                      <span>Confirm New Password</span>
+                      <input
+                        type="password"
+                        placeholder="Re-enter your new password"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="wallet-submit-row">
+                    <a href="./settings.html" class="button button-primary">
+                      Save Changed Password
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="settings-support-note">
+                <div class="wallet-note-icon">i</div>
+                <p>
+                  Use <strong>Security Access</strong> to change your password, and
+                  <strong>Membership Activation</strong> to enter your key code and
+                  continue your account setup.
+                </p>
+              </div>
+
+              <footer class="footer settings-footer">
+                <div class="footer-brand">
+                  <img
+                    class="brand-mark"
+                    src="./img/mutualcare_Logo.png"
+                    alt="Mutual Care Community logo"
+                  />
+                  <div>
+                    <strong>Mutual Care</strong>
+                    <span>MARKET</span>
+                  </div>
+                </div>
+                <p>
+                  Mutual Care Market is an independently operated commercial
+                  marketplace. Participating businesses voluntarily support Mutual
+                  Care Community through documented donations.
+                </p>
+              </footer>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

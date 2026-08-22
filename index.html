@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Saver Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+      <div class="ambient ambient-bottom"></div>
+
+      <main class="landing-page" id="top">
+        <header class="landing-header">
+          <a class="landing-brand" href="#top">
+            <img
+              class="landing-brand-logo"
+              src="./img/mutualcare_Logo.png"
+              alt="Mutual Care Community logo"
+            />
+            <span>Mutual Care Market</span>
+          </a>
+
+          <nav class="landing-nav">
+            <a class="landing-nav-item" href="#highlights">Explore</a>
+            <a class="landing-nav-item" href="#business">Merchants</a>
+            <a class="landing-nav-item" href="#auth-panel" data-auth-open="login">
+              Sign In
+            </a>
+            <a class="landing-nav-item landing-nav-cta" href="#auth-panel" data-auth-open="register">
+              Register
+            </a>
+          </nav>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <img
+                class="eyebrow-logo"
+                src="./img/mutualcare_Logo.png"
+                alt="Mutual Care Community logo"
+              />
+              <span>Mutual Care Market</span>
+              <span class="eyebrow-tag">Community marketplace</span>
+            </div>
+
+            <h1>
+              Shop.
+              <span class="text-blue">Support.</span>
+              <span class="text-gold">Strengthen communities.</span>
+            </h1>
+
+            <p class="hero-description">
+              Discover trusted energy-saving products, local services, and
+              community-backed solutions in one modern marketplace.
+            </p>
+
+            <div class="cta-row">
+              <a href="#highlights" class="button button-primary">Explore Market</a>
+              <a href="#business" class="button button-secondary">Become a Merchant</a>
+            </div>
+
+            <div class="notice-card">
+              <div class="notice-icon">i</div>
+              <div>
+                <strong>Power Saver Market is a frontend-only demo experience.</strong>
+                <p>
+                  This landing page is designed to mirror your reference style
+                  while keeping all forms and actions non-functional for now.
+                </p>
+              </div>
+            </div>
+
+            <div class="pill-row">
+              <span class="info-pill">Verified merchants</span>
+              <span class="info-pill">Fair marketplace</span>
+              <span class="info-pill">Secure browsing</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <div class="screen-sidebar">
+                  <span class="screen-dot active"></span>
+                  <span class="screen-dot"></span>
+                  <span class="screen-dot"></span>
+                </div>
+                <div class="screen-cards">
+                  <div class="mini-card large"></div>
+                  <div class="mini-grid">
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-card hint-card">
+              <strong>Smart Savings</strong>
+              <span>Discover efficient products and local service bundles.</span>
+            </div>
+
+            <div class="floating-card support-card">
+              <strong>Community Support</strong>
+              <span>Merchants can participate in visible impact programs.</span>
+            </div>
+
+            <div class="auth-card auth-card-hidden" id="auth-panel">
+              <button class="auth-close" type="button" aria-label="Close form" data-auth-close>
+                X
+              </button>
+
+              <div class="auth-header">
+                <img
+                  class="auth-badge"
+                  src="./img/mutualcare_Logo.png"
+                  alt="Mutual Care Community logo"
+                />
+                <div>
+                  <span class="auth-label">Marketplace access</span>
+                  <h2 id="auth-title">Login to your account</h2>
+                </div>
+              </div>
+
+              <div class="auth-tabs">
+                <button class="tab active auth-tab-button" type="button" data-auth-tab="login">
+                  Login
+                </button>
+                <button class="tab auth-tab-button" type="button" data-auth-tab="register">
+                  Register
+                </button>
+              </div>
+
+              <div class="auth-panel active" data-auth-panel="login">
+                <div class="access-card">
+                  <img
+                    class="access-icon"
+                    src="./img/mutualcare_Logo.png"
+                    alt="Mutual Care Community logo"
+                  />
+                  <div>
+                    <strong>Mutual Care access</strong>
+                    <p>Sign in to manage your saved items, activity, and offers.</p>
+                  </div>
+                </div>
+
+                <form class="auth-form">
+                  <label>
+                    <span>Username</span>
+                    <input type="text" placeholder="Enter your username" />
+                  </label>
+                  <label>
+                    <span>Password</span>
+                    <input type="password" placeholder="Enter your password" />
+                  </label>
+                  <a class="button button-primary button-full" href="./dashboard.html">
+                    Sign In to Market
+                  </a>
+                </form>
+
+                <div class="tag-row">
+                  <span class="tag">Secure access</span>
+                  <span class="tag">Marketplace platform</span>
+                </div>
+
+                <p class="auth-footnote">
+                  New here?
+                  <a href="#auth-panel" data-auth-switch="register">Create an account</a>
+                </p>
+              </div>
+
+              <div class="auth-panel" data-auth-panel="register">
+                <div class="register-preview register-preview-page">
+                  <div class="register-preview-head">
+                    <div>
+                      <span class="auth-label">SolidCare market registration</span>
+                      <h3>Create your access</h3>
+                      <p>Login, mobile number, and referral setup in one guided flow.</p>
+                    </div>
+                    <span class="register-step-badge">1/3</span>
+                  </div>
+
+                  <div class="register-steps">
+                    <span class="register-step active">1</span>
+                    <span class="register-step-line"></span>
+                    <span class="register-step">2</span>
+                    <span class="register-step-line"></span>
+                    <span class="register-step">3</span>
+                  </div>
+
+                  <div class="register-access-card">
+                    <div class="register-access-icon"></div>
+                    <div>
+                      <strong>Marketplace Access</strong>
+                      <p>Set up your marketplace login and referral information.</p>
+                    </div>
+                  </div>
+
+                  <form class="register-form">
+                    <label class="register-field register-field-full">
+                      <span>Invite / Referral Code</span>
+                      <input type="text" placeholder="Enter invite or referral code" />
+                    </label>
+
+                    <label class="register-field">
+                      <span>Username</span>
+                      <input type="text" placeholder="Choose username" />
+                    </label>
+
+                    <label class="register-field">
+                      <span>Mobile Number</span>
+                      <input type="text" placeholder="(+63) 9XX XXXX XXX" />
+                    </label>
+
+                    <label class="register-field">
+                      <span>Password</span>
+                      <input type="password" placeholder="Create password" />
+                    </label>
+
+                    <label class="register-field">
+                      <span>Confirm Password</span>
+                      <input type="password" placeholder="Repeat password" />
+                    </label>
+                  </form>
+
+                  <div class="register-note">
+                    <div class="wallet-note-icon">i</div>
+                    <p>Use a secure password and a mobile number you can access.</p>
+                  </div>
+
+                  <a class="button button-primary button-full register-continue" href="./dashboard.html">
+                    Continue
+                  </a>
+
+                  <p class="auth-footnote auth-footnote-register">
+                    Already registered?
+                    <a href="#auth-panel" data-auth-switch="login">Back to login</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="highlights" id="highlights">
+          <article class="highlight-item">
+            <h3>Trusted Merchants</h3>
+            <p>Organized businesses and carefully presented storefronts.</p>
+          </article>
+          <article class="highlight-item">
+            <h3>Easy Shopping</h3>
+            <p>Products and services gathered in one polished experience.</p>
+          </article>
+          <article class="highlight-item">
+            <h3>Market Offers</h3>
+            <p>Discover featured energy-saving products and partner deals.</p>
+          </article>
+          <article class="highlight-item">
+            <h3>Community Impact</h3>
+            <p>Transparent support messaging woven into the marketplace.</p>
+          </article>
+        </section>
+
+        <section class="cards-section" id="business">
+          <article class="info-card soft-blue">
+            <div class="card-topline">For shoppers</div>
+            <h3>Find what you need from businesses you can trust.</h3>
+            <p>
+              Browse products, stores, local offers, and services through one
+              clean commercial marketplace.
+            </p>
+            <div class="mini-pill-row">
+              <span>Essentials</span>
+              <span>Solar</span>
+              <span>Home</span>
+              <span>Lifestyle</span>
+            </div>
+            <a href="#top">Start exploring</a>
+          </article>
+
+          <article class="info-card soft-rose">
+            <div class="card-topline">For businesses</div>
+            <h3>Grow your business while creating meaningful impact.</h3>
+            <p>
+              Participating merchants can showcase products clearly while
+              highlighting support for community-focused programs.
+            </p>
+            <ul>
+              <li>Marketplace visibility</li>
+              <li>Product and store presence</li>
+              <li>Optional support participation</li>
+            </ul>
+            <a href="#auth-panel" data-auth-open="register">Register your account</a>
+          </article>
+
+          <article class="info-card dark-card">
+            <div class="dark-chip">Commerce + care</div>
+            <h3>Smart products. Stronger communities.</h3>
+            <p>
+              Power Saver Market connects commercial activity with a clean,
+              transparent story around local impact.
+            </p>
+            <div class="flow-row">
+              <span>Merchant</span>
+              <span>Commerce</span>
+              <span>Support</span>
+            </div>
+          </article>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-brand">
+            <img
+              class="brand-mark"
+              src="./img/mutualcare_Logo.png"
+              alt="Mutual Care Community logo"
+            />
+            <div>
+              <strong>Mutual Care</strong>
+              <span>MARKET</span>
+            </div>
+          </div>
+          <p>
+            Power Saver Market is a polished landing-page concept inspired by
+            your mockup and intentionally limited to frontend presentation.
+          </p>
+        </footer>
+      </main>
+
+    </div>
+    <script>
+      (function () {
+        const panel = document.getElementById("auth-panel");
+        if (!panel) return;
+
+        const title = document.getElementById("auth-title");
+        const tabs = panel.querySelectorAll("[data-auth-tab]");
+        const sections = panel.querySelectorAll("[data-auth-panel]");
+        const switches = document.querySelectorAll("[data-auth-switch]");
+        const openers = document.querySelectorAll("[data-auth-open]");
+        const closers = panel.querySelectorAll("[data-auth-close]");
+
+        function hideAuthPanel() {
+          panel.classList.add("auth-card-hidden");
+        }
+
+        function setAuthView(view) {
+          panel.classList.remove("auth-card-hidden");
+
+          tabs.forEach((tab) => {
+            tab.classList.toggle("active", tab.dataset.authTab === view);
+          });
+
+          sections.forEach((section) => {
+            section.classList.toggle("active", section.dataset.authPanel === view);
+          });
+
+          if (title) {
+            title.textContent =
+              view === "register" ? "Create your account" : "Login to your account";
+          }
+        }
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => setAuthView(tab.dataset.authTab));
+        });
+
+        switches.forEach((link) => {
+          link.addEventListener("click", () => setAuthView(link.dataset.authSwitch));
+        });
+
+        openers.forEach((link) => {
+          link.addEventListener("click", () => setAuthView(link.dataset.authOpen));
+        });
+
+        closers.forEach((button) => {
+          button.addEventListener("click", () => {
+            hideAuthPanel();
+            if (window.location.hash === "#auth-panel") {
+              history.pushState("", document.title, window.location.pathname + window.location.search);
+            }
+          });
+        });
+
+        window.addEventListener("hashchange", () => {
+          if (window.location.hash !== "#auth-panel") {
+            hideAuthPanel();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

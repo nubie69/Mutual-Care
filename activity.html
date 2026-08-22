@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutual Care Activity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+      <div class="ambient ambient-bottom"></div>
+
+      <div class="dashboard-layout" id="top">
+        <aside class="dashboard-sidebar">
+          <a class="dashboard-brand" href="./index.html">
+            <img
+              class="dashboard-brand-logo"
+              src="./img/mutualcare_Logo.png"
+              alt="Mutual Care Community logo"
+            />
+            <div>
+              <strong>Mutual Care</strong>
+              <span>Member space</span>
+            </div>
+          </a>
+
+          <nav class="dashboard-nav">
+            <a class="dashboard-nav-item" href="./dashboard.html">
+              <span class="dashboard-nav-icon icon-home">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span>Home</span>
+            </a>
+            <a class="dashboard-nav-item" href="./merchant.html">
+              <span class="dashboard-nav-icon icon-merchant"></span>
+              <span>Merchant</span>
+            </a>
+            <a class="dashboard-nav-item" href="./wallet.html">
+              <span class="dashboard-nav-icon icon-wallet"></span>
+              <span>Wallet</span>
+            </a>
+            <a class="dashboard-nav-item active" href="./activity.html">
+              <span class="dashboard-nav-icon icon-activity"></span>
+              <span>Activity</span>
+            </a>
+            <a class="dashboard-nav-item" href="./referrals.html">
+              <span class="dashboard-nav-icon icon-referrals"></span>
+              <span>Referrals</span>
+            </a>
+            <a class="dashboard-nav-item" href="./access.html">
+              <span class="dashboard-nav-icon icon-access"></span>
+              <span>Access</span>
+            </a>
+            <a class="dashboard-nav-item" href="./profile.html">
+              <span class="dashboard-nav-icon icon-profile"></span>
+              <span>Profile</span>
+            </a>
+            <a class="dashboard-nav-item" href="./settings.html">
+              <span class="dashboard-nav-icon icon-settings"></span>
+              <span>Settings</span>
+            </a>
+            <a class="dashboard-nav-item logout" href="./index.html">
+              <span class="dashboard-nav-icon icon-logout"></span>
+              <span>Logout</span>
+            </a>
+          </nav>
+        </aside>
+
+        <main class="dashboard-main">
+          <section class="dashboard-section dashboard-page">
+            <div class="activity-page">
+              <div class="activity-hero-card">
+                <div class="activity-hero-copy">
+                  <h1 class="activity-ledger-title">MutualCare ledger</h1>
+                  <div class="activity-hero-actions">
+                    <a href="./activity.html" class="button button-secondary">Reset</a>
+                    <a href="./activity.html" class="button button-primary">Refresh Ledger</a>
+                  </div>
+                </div>
+
+                <div class="activity-summary-card">
+                  <span class="dashboard-kicker">Current view</span>
+                  <div class="activity-summary-list">
+                    <div class="activity-summary-row">
+                      <span>Total In</span>
+                      <strong class="positive">P 6,500.00</strong>
+                    </div>
+                    <div class="activity-summary-row">
+                      <span>Total Out</span>
+                      <strong class="negative">P 0.00</strong>
+                    </div>
+                    <div class="activity-summary-row">
+                      <span>Net Movement</span>
+                      <strong class="positive">P 6,500.00</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="activity-filter-card">
+                <label class="activity-filter-field activity-search-field">
+                  <span>Search</span>
+                  <input type="text" placeholder="Search reference, wallet, note..." />
+                </label>
+                <label class="activity-filter-field">
+                  <span>Status</span>
+                  <select>
+                    <option>All Status</option>
+                  </select>
+                </label>
+                <label class="activity-filter-field">
+                  <span>From</span>
+                  <input type="text" placeholder="mm/dd/yyyy" />
+                </label>
+                <label class="activity-filter-field">
+                  <span>To</span>
+                  <input type="text" placeholder="mm/dd/yyyy" />
+                </label>
+              </div>
+
+              <div class="ledger-group">
+                <div class="ledger-group-header">
+                  <div class="ledger-group-title">
+                    <div class="ledger-group-icon"></div>
+                    <strong>Yesterday</strong>
+                  </div>
+                  <span class="ledger-count-pill">1 item</span>
+                </div>
+
+                <article class="ledger-item-card">
+                  <div class="ledger-item-top">
+                    <div>
+                      <div class="ledger-badge positive">IN</div>
+                      <h2>Network Reward</h2>
+                      <p>Care circle reward credited through member access distribution.</p>
+                    </div>
+                    <div class="ledger-item-amount">
+                      <strong class="positive">+P 150.00</strong>
+                      <span>August 20, 2026, 03:04 PM</span>
+                    </div>
+                  </div>
+
+                  <div class="ledger-meta-grid">
+                    <div class="ledger-meta-card">
+                      <span>Reference</span>
+                      <strong>MC-LEDGER-20260820-001</strong>
+                    </div>
+                    <div class="ledger-meta-card">
+                      <span>Wallet</span>
+                      <strong>Wallet</strong>
+                    </div>
+                    <div class="ledger-meta-card">
+                      <span>Status</span>
+                      <em class="ledger-status completed">Completed</em>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="ledger-group">
+                <div class="ledger-group-header">
+                  <div class="ledger-group-title">
+                    <div class="ledger-group-icon"></div>
+                    <strong>August 14, 2026</strong>
+                  </div>
+                  <span class="ledger-count-pill">1 item</span>
+                </div>
+
+                <article class="ledger-item-card">
+                  <div class="ledger-item-top">
+                    <div>
+                      <div class="ledger-badge positive">IN</div>
+                      <h2>Payout Request</h2>
+                      <p>Approved transfer record from your commercial wallet balance.</p>
+                    </div>
+                    <div class="ledger-item-amount">
+                      <strong class="positive">+P 1,900.00</strong>
+                      <span>August 14, 2026, 01:27 PM</span>
+                    </div>
+                  </div>
+
+                  <div class="ledger-meta-grid">
+                    <div class="ledger-meta-card">
+                      <span>Reference</span>
+                      <strong>MC-PAYOUT-20260814-002</strong>
+                    </div>
+                    <div class="ledger-meta-card">
+                      <span>Wallet</span>
+                      <strong>Wallet</strong>
+                    </div>
+                    <div class="ledger-meta-card">
+                      <span>Status</span>
+                      <em class="ledger-status completed">Completed</em>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
