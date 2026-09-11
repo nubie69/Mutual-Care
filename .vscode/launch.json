@@ -2,16 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Open Admin Page",
-      "type": "pwa-chrome",
+      "name": "Run Mutual Care",
+      "type": "node",
       "request": "launch",
-      "file": "${workspaceFolder}/admin.html"
+      "program": "${workspaceFolder}/server.js",
+      "console": "integratedTerminal"
     },
     {
-      "name": "Open Landing Page",
+      "name": "Open Mutual Care",
       "type": "pwa-chrome",
       "request": "launch",
-      "file": "${workspaceFolder}/index.html"
+      "url": "http://127.0.0.1:3000",
+      "webRoot": "${workspaceFolder}/public"
     }
   ]
 }

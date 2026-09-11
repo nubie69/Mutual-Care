@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
     <div class="page-shell">
@@ -24,7 +24,7 @@
             <div class="eyebrow">
               <img
                 class="eyebrow-logo"
-                src="./img/mutualcare_Logo.png"
+                src="/assets/images/mutualcare_Logo.png"
                 alt="Mutual Care Community logo"
               />
               <span>Mutual Care Market</span>
@@ -44,10 +44,10 @@
             <div class="notice-card">
               <div class="notice-icon">i</div>
               <div>
-                <strong>Frontend-only registration flow.</strong>
+                <strong>Secure account registration.</strong>
                 <p>
-                  This page is for presentation only, so the fields and button do
-                  not submit data yet.
+                  Your password is hashed before it is stored and your session uses
+                  an HttpOnly cookie.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@
             <div class="auth-header">
               <img
                 class="auth-badge"
-                src="./img/mutualcare_Logo.png"
+                src="/assets/images/mutualcare_Logo.png"
                 alt="Mutual Care Community logo"
               />
               <div>
@@ -97,30 +97,30 @@
                 </div>
               </div>
 
-              <form class="register-form">
+              <form class="register-form" id="registration-form">
                 <label class="register-field register-field-full">
                   <span>Invite / Referral Code</span>
-                  <input type="text" placeholder="Enter invite or referral code" />
+                    <input name="referralCode" type="text" placeholder="Enter invite or referral code" />
                 </label>
 
                 <label class="register-field">
                   <span>Username</span>
-                  <input type="text" placeholder="Choose username" />
+                    <input name="username" type="text" placeholder="Choose username" required />
                 </label>
 
                 <label class="register-field">
                   <span>Mobile Number</span>
-                  <input type="text" placeholder="(+63) 9XX XXXX XXX" />
+                    <input name="mobile" type="text" placeholder="(+63) 9XX XXXX XXX" required />
                 </label>
 
                 <label class="register-field">
                   <span>Password</span>
-                  <input type="password" placeholder="Create password" />
+                    <input name="password" type="password" placeholder="Create password" required />
                 </label>
 
                 <label class="register-field">
                   <span>Confirm Password</span>
-                  <input type="password" placeholder="Repeat password" />
+                    <input name="confirmPassword" type="password" placeholder="Repeat password" required />
                 </label>
               </form>
 
@@ -129,9 +129,9 @@
                 <p>Use a secure password and a mobile number you can access.</p>
               </div>
 
-              <a class="button button-primary button-full register-continue" href="./dashboard.html">
+              <button class="button button-primary button-full register-continue" type="submit" form="registration-form">
                 Continue
-              </a>
+              </button>
             </div>
 
             <p class="auth-footnote">
@@ -141,5 +141,6 @@
         </section>
       </main>
     </div>
+    <script src="/assets/js/auth.js"></script>
   </body>
 </html>

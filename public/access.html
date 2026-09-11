@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutual Care Access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/workspace.css" /></head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+      <div class="ambient ambient-bottom"></div>
+      <div class="dashboard-layout" id="top">
+        <aside class="dashboard-sidebar">
+          <a class="dashboard-brand" href="./index.html">
+            <img class="dashboard-brand-logo" src="/assets/images/mutualcare_Logo.png" alt="Mutual Care Community logo" />
+            <div><strong>Mutual Care</strong><span>Member space</span></div>
+          </a>
+          <nav class="dashboard-nav">
+            <a class="dashboard-nav-item" href="./dashboard.html"><span class="dashboard-nav-icon icon-home"><span></span><span></span><span></span><span></span></span><span>Home</span></a>
+            <a class="dashboard-nav-item" href="./merchant.html"><span class="dashboard-nav-icon icon-merchant"></span><span>Merchant</span></a>
+            <a class="dashboard-nav-item" href="./wallet.html"><span class="dashboard-nav-icon icon-wallet"></span><span>Wallet</span></a>
+            <a class="dashboard-nav-item" href="./activity.html"><span class="dashboard-nav-icon icon-activity"></span><span>Activity</span></a>
+            <a class="dashboard-nav-item" href="./referrals.html"><span class="dashboard-nav-icon icon-referrals"></span><span>Referrals</span></a>
+            <a class="dashboard-nav-item active" href="./access.html"><span class="dashboard-nav-icon icon-access"></span><span>Access</span></a>
+            <a class="dashboard-nav-item" href="./profile.html"><span class="dashboard-nav-icon icon-profile"></span><span>Profile</span></a>
+            <a class="dashboard-nav-item" href="./settings.html"><span class="dashboard-nav-icon icon-settings"></span><span>Settings</span></a>
+            <a class="dashboard-nav-item logout" href="./index.html"><span class="dashboard-nav-icon icon-logout"></span><span>Logout</span></a>
+          </nav>
+        </aside>
+        <main class="dashboard-main" id="workspace"><p role="status">Loading your workspace…</p></main>
+      </div>
+    </div>
+  <script type="module" src="/assets/js/workspace.js"></script></body>
+</html>

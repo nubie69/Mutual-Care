@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
     <div class="page-shell">
@@ -23,7 +23,7 @@
           <a class="landing-brand" href="#top">
             <img
               class="landing-brand-logo"
-              src="./img/mutualcare_Logo.png"
+              src="/assets/images/mutualcare_Logo.png"
               alt="Mutual Care Community logo"
             />
             <span>Mutual Care Market</span>
@@ -46,7 +46,7 @@
             <div class="eyebrow">
               <img
                 class="eyebrow-logo"
-                src="./img/mutualcare_Logo.png"
+                src="/assets/images/mutualcare_Logo.png"
                 alt="Mutual Care Community logo"
               />
               <span>Mutual Care Market</span>
@@ -72,10 +72,9 @@
             <div class="notice-card">
               <div class="notice-icon">i</div>
               <div>
-                <strong>Power Saver Market is a frontend-only demo experience.</strong>
+                <strong>Mutual Care Market is now connected.</strong>
                 <p>
-                  This landing page is designed to mirror your reference style
-                  while keeping all forms and actions non-functional for now.
+                  Create an account or sign in to begin a secure marketplace session.
                 </p>
               </div>
             </div>
@@ -125,7 +124,7 @@
               <div class="auth-header">
                 <img
                   class="auth-badge"
-                  src="./img/mutualcare_Logo.png"
+                  src="/assets/images/mutualcare_Logo.png"
                   alt="Mutual Care Community logo"
                 />
                 <div>
@@ -147,7 +146,7 @@
                 <div class="access-card">
                   <img
                     class="access-icon"
-                    src="./img/mutualcare_Logo.png"
+                    src="/assets/images/mutualcare_Logo.png"
                     alt="Mutual Care Community logo"
                   />
                   <div>
@@ -159,15 +158,15 @@
                 <form class="auth-form">
                   <label>
                     <span>Username</span>
-                    <input type="text" placeholder="Enter your username" />
+                    <input name="username" type="text" placeholder="Enter your username" required />
                   </label>
                   <label>
                     <span>Password</span>
-                    <input type="password" placeholder="Enter your password" />
+                    <input name="password" type="password" placeholder="Enter your password" required />
                   </label>
-                  <a class="button button-primary button-full" href="./dashboard.html">
+                  <button class="button button-primary button-full" type="submit">
                     Sign In to Market
-                  </a>
+                  </button>
                 </form>
 
                 <div class="tag-row">
@@ -208,30 +207,30 @@
                     </div>
                   </div>
 
-                  <form class="register-form">
+                  <form class="register-form" id="landing-register-form">
                     <label class="register-field register-field-full">
                       <span>Invite / Referral Code</span>
-                      <input type="text" placeholder="Enter invite or referral code" />
+                      <input name="referralCode" type="text" placeholder="Enter invite or referral code" />
                     </label>
 
                     <label class="register-field">
                       <span>Username</span>
-                      <input type="text" placeholder="Choose username" />
+                      <input name="username" type="text" placeholder="Choose username" required />
                     </label>
 
                     <label class="register-field">
                       <span>Mobile Number</span>
-                      <input type="text" placeholder="(+63) 9XX XXXX XXX" />
+                      <input name="mobile" type="text" placeholder="(+63) 9XX XXXX XXX" required />
                     </label>
 
                     <label class="register-field">
                       <span>Password</span>
-                      <input type="password" placeholder="Create password" />
+                      <input name="password" type="password" placeholder="Create password" required />
                     </label>
 
                     <label class="register-field">
                       <span>Confirm Password</span>
-                      <input type="password" placeholder="Repeat password" />
+                      <input name="confirmPassword" type="password" placeholder="Repeat password" required />
                     </label>
                   </form>
 
@@ -240,9 +239,9 @@
                     <p>Use a secure password and a mobile number you can access.</p>
                   </div>
 
-                  <a class="button button-primary button-full register-continue" href="./dashboard.html">
+                  <button class="button button-primary button-full register-continue" type="submit" form="landing-register-form">
                     Continue
-                  </a>
+                  </button>
 
                   <p class="auth-footnote auth-footnote-register">
                     Already registered?
@@ -324,10 +323,11 @@
           <div class="footer-brand">
             <img
               class="brand-mark"
-              src="./img/mutualcare_Logo.png"
+              src="/assets/images/mutualcare_Logo.png"
               alt="Mutual Care Community logo"
             />
-            <div>
+            </div>
+            <script src="/assets/js/auth.js"></script>
               <strong>Mutual Care</strong>
               <span>MARKET</span>
             </div>
